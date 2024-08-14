@@ -2,7 +2,7 @@
 Assignment
 SERVERLESS LOG DATA PROCESSING PIPELINE
 
-Project Overview
+Project Overview br/
 This project builds a serverless data processing pipeline for analysing server logs stored in JSON format. The pipeline uses AWS services Lambda, S3, Glue, and CloudWatch. The project includes:
 Ingesting log data using a Lambda function.
 Storing the data in an S3 bucket.
@@ -10,7 +10,7 @@ Cataloging the data using AWS Glue Crawler.
 Processing the data with an AWS Glue ETL job.
 Monitoring the Glue job using CloudWatch with custom alarms.
 
-Technologies Used
+Technologies Used:
 AWS CLI
 AWS Lambda
 AWS S3
@@ -18,7 +18,8 @@ AWS CloudWatch
 AWS Glue
 Python
 
-Use Case: The primary use case is to process server logs and extract error logs, which are logs with status codes indicating errors (status codes 400–599). The extracted error logs are then used to monitor the application's performance and raise alarms when error count exceeds given thresholds.
+Use Case: 
+The primary use case is to process server logs and extract error logs, which are logs with status codes indicating errors (status codes 400–599). The extracted error logs are then used to monitor the application's performance and raise alarms when error count exceeds given thresholds.
 
 Prerequisites:
 Install AWS CLI.
