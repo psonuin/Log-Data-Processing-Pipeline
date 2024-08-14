@@ -1,0 +1,12 @@
+{
+    "log_data": [
+        {
+            "timestamp": "2024-08-13T12:34:56Z",
+            "log_level": "ERROR",
+            "user_id": "12345",
+            "request": "GET /api/product/67890",
+            "status_code": 500,
+            "response_time": 1200
+        }
+    ]
+}
