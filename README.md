@@ -2,7 +2,7 @@
 Assignment
 SERVERLESS LOG DATA PROCESSING PIPELINE
 
-Project Overview br/
+Project Overview <br/>
 This project builds a serverless data processing pipeline for analysing server logs stored in JSON format. The pipeline uses AWS services Lambda, S3, Glue, and CloudWatch. The project includes:
 Ingesting log data using a Lambda function.
 Storing the data in an S3 bucket.
