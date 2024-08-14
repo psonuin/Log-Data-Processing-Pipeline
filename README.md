@@ -93,8 +93,31 @@ aws glue start-job-run --job-name error-log-analysis-job
 ```
 After running the etl-job successfully, processed error logs are stored in the S3 bucket in the json format.<br/>
 
-### MONITORING AND ALARMS:
-
+### MONITORING AND ALARMS:<br/>
+15. To setup cloudwatch monitoring for etl-job performance, create an alarm for error count metric (defined in glue etl-job). Firstly, create SNS topic using command
+   ```
+aws sns create-topic --name SNSTOPICNAME
+  ```
+16. Add subscription with a email id to get notifications when alarm is triggered.
+```
+aws sns subscribe --topic-arn arn:aws:sns:your-region:your-account-id:YourSNSTopicName --protocol email --notification-endpoint my-email@gmail.com
+```
+17. Create a cloudwatch alarm with threshold value of 70 errors within 300 sec.
+```
+aws cloudwatch put-metric-alarm \
+    --alarm-name "GlueETLErrorLogCountHigh" \
+    --alarm-description "Alarm when Glue ETL job processes a high number of error logs" \
+    --metric-name "ErrorLogCount" \
+    --namespace "GlueETL" \
+    --statistic "Sum" \
+    --period 300 \
+    --threshold 70 \
+    --comparison-operator "GreaterThanOrEqualToThreshold" \
+    --dimensions Name=JobName,Value=log-data-etl-job \
+    --evaluation-periods 1 \
+    --alarm-actions arn:aws:sns:region:ID:SNSTOPICNAME \             
+    --unit "Count"
+``` 
 
 
 
