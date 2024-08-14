@@ -1,11 +1,11 @@
 {
     "Name": "server-logs-crawler",
-    "Role": "arn:aws:iam::024848454674:role/GlueS3Role",
-    "DatabaseName": "log-database",
+    "Role": "arn:aws:iam::ACCOUNTID:role/GlueS3Role",
+    "DatabaseName": "my-database",
     "Targets": {
         "S3Targets": [
             {
-                "Path": "s3://log-bucket-practice2/"
+                "Path": "s3://my-data-bucket/"
             }
         ]
     },
