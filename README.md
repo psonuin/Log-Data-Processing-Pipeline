@@ -25,6 +25,7 @@ Install AWS CLI.<br/>
 Python environment (VS Code) for server-log data generation, lambda function and etl-job development.<br/>
 
 ### Implementation (step by step): <br/>
+Before implementing this project, make sure all the files are in the same folder
 
 ### DATA INGESTION AND POLICIES:<br/>
 1.Write a python script to randomly generate 100 server logs which will become our data to process. Refer server_logs_generation.py and server_logs.json.<br/>
