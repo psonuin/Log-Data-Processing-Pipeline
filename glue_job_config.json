@@ -1,0 +1,10 @@
+{
+    "Name": "error-log-analysis-job",
+    "Role": "arn:aws:iam::123456789012:role/GlueS3Role",
+    "Command": {
+        "Name": "glueetl",
+        "ScriptLocation": "s3://log-bucket-practice2/glue_etl_script.py"
+    },
+    "GlueVersion": "3.0",
+    "MaxCapacity": 2
+}
