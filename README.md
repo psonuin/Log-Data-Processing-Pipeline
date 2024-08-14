@@ -3,11 +3,11 @@
 
 ### Project Overview <br/>
 This project builds a serverless data processing pipeline for analysing server logs stored in JSON format. The pipeline uses AWS services Lambda, S3, Glue, and CloudWatch. The project includes:<br/>
-Ingesting log data using a Lambda function. <br/>
-Storing the data in an S3 bucket.<br/>
-Cataloging the data using AWS Glue Crawler.<br/>
-Processing the data with an AWS Glue ETL job.<br/>
-Monitoring the Glue job using CloudWatch with custom alarms.<br/>
+* Ingesting log data using a Lambda function. <br/>
+* Storing the data in an S3 bucket.<br/>
+* Cataloging the data using AWS Glue Crawler.<br/>
+* Processing the data with an AWS Glue ETL job.<br/>
+* Monitoring the Glue job using CloudWatch with custom alarms.<br/>
 
 ### Technologies Used:<br/>
 AWS CLI<br/>
