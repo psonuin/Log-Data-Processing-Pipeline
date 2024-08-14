@@ -30,7 +30,7 @@ Implementation (step by step): <br/>
 DATA INGESTION AND POLICIES:<br/>
 1.Write a python script to randomly generate 100 server logs which will become our data to process. Refer server_logs_generation.py and server_logs.json.<br/>
 2.Create IAM user and access keys. Use those keys to configure aws in the CLI using command<br/>
-aws configure<br/>
+'''aws configure'''<br/>
 3.Create roles for lambda and glue using trust-policy-lambda.json and trust-policy-glue.json files with the commands<br/>
 aws iam create-role --role-name LambdaS3Role --assume-role-policy-document file://trust-policy-lambda.json<br/>
 aws iam create-role --role-name GlueS3Role --assume-role-policy-document file://trust-policy-glue.json<br/>
