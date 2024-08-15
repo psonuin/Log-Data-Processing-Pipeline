@@ -114,7 +114,7 @@ aws cloudwatch put-metric-alarm \
     --period 300 \
     --threshold 70 \
     --comparison-operator "GreaterThanOrEqualToThreshold" \
-    --dimensions Name=JobName,Value=log-data-etl-job \
+    --dimensions Name=JobName,Value=error-log-analysis-job \
     --evaluation-periods 1 \
     --alarm-actions arn:aws:sns:region:ID:SNSTOPICNAME \             
     --unit "Count"
